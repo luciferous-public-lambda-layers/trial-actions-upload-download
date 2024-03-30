@@ -33,7 +33,9 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: test_a
+          path: layers
       - uses: actions/download-artifact@v4
         with:
           name: test_b
+          path: layers
       - run: find . | sort
