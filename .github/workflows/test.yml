@@ -39,5 +39,4 @@ jobs:
           name: test_b
           path: layers
       - run: find . | sort
-      - run: witch python
       - run: python --version
