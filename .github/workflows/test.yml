@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ./create_a.sh
+      - run: ./main.py
       - uses: actions/upload-artifact@v4
         with:
           name: test_a
