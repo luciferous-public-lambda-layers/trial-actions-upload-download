@@ -3,6 +3,10 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   test_a:
     runs-on: ubuntu-latest
