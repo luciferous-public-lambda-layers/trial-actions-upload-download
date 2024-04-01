@@ -40,3 +40,7 @@ jobs:
           path: layers
       - run: find . | sort
       - run: python --version
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.ROLE_ARN }}
+          aws-region: ap-northeast-1
